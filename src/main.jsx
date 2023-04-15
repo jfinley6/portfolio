@@ -11,8 +11,10 @@ import "./stylesheets/index.css";
 const AppLayout = () => {
   return (
     <>
-      <NavBar />
-      <Outlet />
+        <NavBar />
+        <div className="component-container">
+          <Outlet />
+        </div>
     </>
   );
 };
