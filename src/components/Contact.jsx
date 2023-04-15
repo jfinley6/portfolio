@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { useEffect } from "react";
 
 function Contact() {
-  return (
-    <div>Contact</div>
-  )
+  useEffect(() => {
+    document.title = "John Finley | Contact";
+  }, []);
+
+  return <div>Contact</div>;
 }
 
-export default Contact
+export default Contact;
