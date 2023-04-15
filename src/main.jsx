@@ -4,7 +4,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import App from "./App";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
-import "./index.css";
+import "./stylesheets/index.css";
 
 const AppLayout = () => {
   return (
