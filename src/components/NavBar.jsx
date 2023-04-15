@@ -26,9 +26,9 @@ function NavBar() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 1024 1024"
-                class="icon"
+                className="icon"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,9 +43,9 @@ function NavBar() {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 1024 1024"
-                class="icon"
+                className="icon"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,6 +54,96 @@ function NavBar() {
               </svg>
             </Link>
           </div>
+        </div>
+      </div>
+      <div id="mobile-navbar">
+        <div className="nav-item">
+          <Link to="/" className="active nav-link">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              strokeWidth="0"
+              viewBox="0 0 24 24"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{
+                color: "white",
+                height: "10vh",
+                width: "10vw",
+                margin: "2vw",
+              }}
+            >
+              <path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path>
+            </svg>
+          </Link>
+        </div>
+        <div className="nav-item">
+          <Link to="/projects" className="nav-link">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              strokeWidth="0"
+              viewBox="0 0 1024 1024"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{
+                color: "white",
+                height: "10vh",
+                width: "10vw",
+                margin: "2vw",
+              }}
+            >
+              <path d="M464 144H160c-8.8 0-16 7.2-16 16v304c0 8.8 7.2 16 16 16h304c8.8 0 16-7.2 16-16V160c0-8.8-7.2-16-16-16zm-52 268H212V212h200v200zm452-268H560c-8.8 0-16 7.2-16 16v304c0 8.8 7.2 16 16 16h304c8.8 0 16-7.2 16-16V160c0-8.8-7.2-16-16-16zm-52 268H612V212h200v200zM464 544H160c-8.8 0-16 7.2-16 16v304c0 8.8 7.2 16 16 16h304c8.8 0 16-7.2 16-16V560c0-8.8-7.2-16-16-16zm-52 268H212V612h200v200zm452-268H560c-8.8 0-16 7.2-16 16v304c0 8.8 7.2 16 16 16h304c8.8 0 16-7.2 16-16V560c0-8.8-7.2-16-16-16zm-52 268H612V612h200v200z"></path>
+            </svg>
+          </Link>
+        </div>
+        <div className="nav-item">
+          <Link to="/about" className="nav-link">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              strokeWidth="0"
+              viewBox="0 0 24 24"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{
+                color: "white",
+                height: "10vh",
+                width: "10vw",
+                margin: "2vw",
+              }}
+            >
+              <path fill="none" d="M0 0h24v24H0V0z"></path>
+              <path d="M12 5.9a2.1 2.1 0 110 4.2 2.1 2.1 0 010-4.2m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"></path>
+            </svg>
+          </Link>
+        </div>
+        <div className="nav-item">
+          <Link to="/contact" className="nav-link">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{
+                color: "white",
+                height: "10vh",
+                width: "10vw",
+                margin: "2vw",
+              }}
+            >
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </Link>
         </div>
       </div>
     </>
