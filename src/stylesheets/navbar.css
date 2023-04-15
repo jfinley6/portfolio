@@ -54,7 +54,20 @@
 
 #mobile-navbar {
     display: none;
-    padding-bottom: 100px;
+    background-color: #464646;
+    border-radius: 2em;
+    bottom: 0;
+    flex-direction: row;
+    height: 8vh;
+    justify-content: center;
+    margin: 0 0 2vh;
+    opacity: .94;
+    padding: 0;
+    position: fixed;
+    vertical-align: middle;
+    width: 70vw;
+    z-index: 1;
+    align-items: center;
 }
 
 .active {
@@ -67,7 +80,7 @@
     display: none;
   }
   #mobile-navbar {
-    display: block
+    display: flex
   }
   .app-container {
     flex-direction: column;
