@@ -20,7 +20,7 @@
 #navbar-name {
   display: flex;
   padding-left: 8vw;
-  font-size: large;
+  font-size: x-large;
 }
 
 #navbar-links {
@@ -33,6 +33,7 @@
 
 .nav-link:hover {
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 #navbar-socials {
@@ -84,5 +85,12 @@
   }
   .app-container {
     flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  #navbar-name {
+    font-size: medium;
   }
 }
