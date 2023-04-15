@@ -35,3 +35,17 @@
   color: #fff;
 }
 
+.component-container {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .component-container {
+    align-items: flex-start;
+  }
+  
+}
