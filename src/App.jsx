@@ -7,7 +7,7 @@ useEffect(() => {
 }, []);
 
   return (
-      <div className="app-container">
+      <div>
         Home
       </div>
   );
