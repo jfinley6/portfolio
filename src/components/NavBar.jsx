@@ -18,7 +18,7 @@ function NavBar() {
           <NavLink to="/about" className="nav-link">
             About
           </NavLink>
-          <NavLink to="/about" className="nav-link">
+          <NavLink to="/contact" className="nav-link">
             Contact
           </NavLink>
           <div id="navbar-socials">
