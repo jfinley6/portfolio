@@ -1,12 +1,18 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../stylesheets/contact.css";
 
-function Contact() {
+export default function Contact() {
+  const [formData, setFormData] = useState({name: "", email: "", message: ""})
+
   useEffect(() => {
     document.title = "John Finley | Contact";
     window.scrollTo(0,0)
   }, []);
+
+  const handleChange = (event) => {
+    setFormData({...formData, [event.target.name]: event.target.value})
+  }
 
   return (
     <div id="contact-page">
@@ -39,12 +45,10 @@ function Contact() {
             <label>
               NAME <span style={{color: "red"}}>*</span>
             </label>
-            <input type="text" required name="from_name" id="name-input" value=""></input>
+            <input type="text" required name="name" id="name-input" onChange={handleChange}></input>
           </div>
         </div>
       </form>
     </div>
   );
 }
-
-export default Contact;
