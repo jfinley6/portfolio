@@ -45,7 +45,7 @@ export default function Contact() {
             <label>
               NAME <span style={{color: "red"}}>*</span>
             </label>
-            <input type="text" required name="name" id="name-input" onChange={handleChange}></input>
+            <input type="text" required name="name" autocomplete="off" id="name-input" onChange={handleChange}></input>
           </div>
         </div>
       </form>
