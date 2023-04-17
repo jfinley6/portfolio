@@ -17,12 +17,12 @@ export default function Contact() {
   return (
     <div id="contact-page">
       <div id="contact-info">
-        <h3>Contact</h3>
+        <p>Contact</p>
         <h1>Looking for a new developer or just want to chat?</h1>
-        <p style={{ color: "rgb(145, 148, 151)", fontSize: "xx-large" }}>
-          Send me a message
+        <p style={{ color: "rgb(145, 148, 151)", fontSize: "large", lineHeight: 1.2 }}>
+          Send me a message to get the process going
         </p>
-        <a href="j.finley92@gmail.com" id="mail-to">
+        <a href="mailto:j.finley92@gmail.com" id="mail-to">
           <svg
             stroke="currentColor"
             fill="currentColor"
@@ -39,15 +39,28 @@ export default function Contact() {
           j.finley92@gmail.com
         </a>
       </div>
-      <form id="contact-form">
+      <form id="contact-form" autoComplete="off" autoCorrect="off">
         <div className="contact-inputs">
           <div id="name-div">
             <label>
               NAME <span style={{color: "red"}}>*</span>
             </label>
-            <input type="text" required name="name" autocomplete="off" id="name-input" onChange={handleChange}></input>
+            <input type="text" required  name="name" id="name-input" onChange={handleChange}></input>
+          </div>
+          <div id="email-div">
+            <label>
+              Email <span style={{color: "red"}}>*</span>
+            </label>
+            <input type="email" required  name="email" id="email-input" onChange={handleChange}></input>
+          </div>
+          <div id="message-div">
+            <label>
+              Message <span style={{color: "red"}}>*</span>
+            </label>
+            <textarea type="text" required  name="message" id="message-input" onChange={handleChange}></textarea>
           </div>
         </div>
+        <button id="email-button">Send</button>
       </form>
     </div>
   );
