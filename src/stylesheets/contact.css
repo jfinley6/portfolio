@@ -50,8 +50,8 @@ h1 {
     flex-direction: column;
     width: fit-content;
     justify-content: flex-start;
-    margin: 2vh;
     gap: 3vh;
+    margin-bottom: 0;
 } 
 
 #name-div, #email-div, #message-div {
@@ -97,14 +97,21 @@ h1 {
   height: 48px;
   align-self: center;
 }
- 
 
+#message-status {
+  min-height: 4vh;
+  margin: 0;
+  text-transform: none;
+  color: var(--green);
+  font-size: small;
+  padding-top: 1vh;
+}
+ 
 @media screen and (max-width: 480px) {
   #contact-info {
     align-items: center;
     text-align: center;
     justify-content: start;
-    /* padding: 0 30px 0 30px; */
     height: fit-content;
     gap: 0.5vh;
   }
@@ -126,6 +133,10 @@ h1 {
   #contact-form {
     justify-content: flex-start;
     padding-bottom: 150px;
+  }
+
+  #message-status {
+    padding-bottom: 1vh;
   }
   
 }
