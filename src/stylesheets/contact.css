@@ -104,8 +104,9 @@ h1 {
     align-items: center;
     text-align: center;
     justify-content: start;
-    padding: 0 40px 0 40px;
+    /* padding: 0 30px 0 30px; */
     height: fit-content;
+    gap: 0.5vh;
   }
 
   #contact-page {
