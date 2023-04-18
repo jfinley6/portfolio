@@ -1,0 +1,33 @@
+#about-page {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  width: 100vw;
+  padding: 8vw;
+  margin-top: 5px;
+}
+
+#about-intro {
+  text-align: center;
+  font-size: x-large;
+  font-family: Roboto Slab;
+}
+
+#about-intro > p:first-child {
+  color: var(--green);
+  line-height: 1.2;
+  font-size: 2rem !important;
+}
+
+@media screen and (max-width: 480px) {
+    #about-intro > p:nth-child(2) {
+        font-size: 0.70em;
+        padding: 8px;
+    }
+}
+
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 1.75rem;
+  }
+}
