@@ -5,6 +5,8 @@ import "../stylesheets/about.css";
 function About() {
   useEffect(() => {
     document.title = "John Finley | About";
+    let top = document.getElementById("about-page")
+    top.scrollIntoView(true)
   }, []);
   return (
     <div id="about-page">

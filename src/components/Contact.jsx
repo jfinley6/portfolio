@@ -14,7 +14,8 @@ export default function Contact() {
 
   useEffect(() => {
     document.title = "John Finley | Contact";
-    window.scrollTo(0, 0);
+    let top = document.getElementById("contact-page")
+    top.scrollIntoView(true)
   }, []);
 
   const handleChange = (event) => {
