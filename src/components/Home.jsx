@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function App() {
+export default function Home() {
 
 useEffect(() => {
   document.title = "John Finley | Developer";
