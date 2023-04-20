@@ -76,6 +76,14 @@
   text-underline-offset: 3px;
 }
 
+.socials {
+  transition: all 0.2s ease-in-out;
+}
+
+.socials:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 480px) {
   #navbar {
     display: none;
@@ -86,7 +94,7 @@
   .app-container {
     flex-direction: column;
   }
-  
+
 }
 
 @media screen and (max-width: 800px) {
