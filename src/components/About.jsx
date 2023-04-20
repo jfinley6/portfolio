@@ -39,7 +39,7 @@ function About() {
             Engineer.
           </p>
           <p className="about-paragraphs">
-            If I labelled myself something other than a Developer, I have a love
+            If I labelled myself something other than a Software Engineer, I have a love
             of the outdoors. In the winter I enjoy skiing and when it's warm out
             I love to play disc golf. Recently I've gotten into running and am
             currently training for a half marathon.
