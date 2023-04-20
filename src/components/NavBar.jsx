@@ -22,7 +22,11 @@ function NavBar() {
             Contact
           </NavLink>
           <div id="navbar-socials">
-            <Link to="https://github.com/jfinley6" target="_blank">
+            <Link
+              to="https://github.com/jfinley6"
+              target="_blank"
+              className="socials"
+            >
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -39,6 +43,7 @@ function NavBar() {
             <Link
               to="https://www.linkedin.com/in/john-tyler-finley/"
               target="_blank"
+              className="socials"
             >
               <svg
                 stroke="currentColor"

@@ -42,9 +42,16 @@
   justify-content: center;
 }
 
+.socials {
+  transition: all 0.2s ease-in-out;
+}
+
+.socials:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 480px) {
   .component-container {
     align-items: flex-start;
   }
-  
 }
