@@ -1,0 +1,121 @@
+#home-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8vw;
+  height: 100vh;
+  width: 100vw;
+  font-family: Roboto Slab;
+}
+
+#home-column {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+#home-image {
+  height: 50vh !important;
+  margin-left: 2vw;
+  width: auto;
+  box-shadow: 0.6vw 0 0 0 var(--green), 1.4vw 0 0 0 #2d5828, 2.2vw 0 0 0 #273038;
+  border-radius: 50%;
+  margin-right: 6vw;
+  margin-top: 3vh;
+}
+
+#details-container {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  text-align: left;
+}
+
+#home-name,
+#home-title {
+  color: var(--green);
+}
+
+h4 {
+  font-size: 1.5rem !important;
+}
+
+h3 {
+  font-size: 1.75rem !important;
+}
+
+#resume-button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#resume-button {
+    display: flex;
+    align-items: center;
+    outline: none;
+    width: fit-content;
+    font-size: 0.9em;
+    line-height: 1;
+    border-radius: 500px;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 14px;
+    color: rgb(15,25,34);
+    background-color: white;
+    height: 48px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+#resume-button:hover {
+    color: white;
+    background-color: transparent;
+    border-color: var(--green);
+}
+
+#navLink:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  #home-column {
+    flex-direction: column;
+    align-items: center;
+  text-align-last: center;
+
+  }
+
+  #home-page {
+    align-items: start;
+  }
+
+  #home-image {
+    max-width: 80%;
+    height: auto !important;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.5rem !important;
+  }
+
+  #details-container {
+    align-items: center;
+    padding-top: 2vh;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1rem !important;
+    display: inline;
+    text-align: center;
+    width: 100%;
+  }
+}
