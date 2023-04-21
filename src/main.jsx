@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import "./stylesheets/index.css";
+import Resume from "./components/Resume";
 
 const AppLayout = () => {
   return (
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+        path: "/resume",
+        element: <Resume />
+      }
     ],
   },
 ]);
