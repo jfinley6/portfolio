@@ -1,0 +1,11 @@
+#resume-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4vw;
+    color: white;
+    justify-content: center;
+    padding: 7vw;
+    padding-bottom: 0;
+    width: 100vw;
+}
