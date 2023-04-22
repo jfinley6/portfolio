@@ -1,11 +1,21 @@
 #projects-page {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 4vw;
+  justify-content: center;
+  text-align: center;
+  gap: 2vw;
   color: white;
   justify-content: center;
   padding: 8vw;
   height: 100vh;
   width: 100vw;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    line-height: 1;
 }
