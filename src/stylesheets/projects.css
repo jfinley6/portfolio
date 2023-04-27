@@ -1,21 +1,83 @@
 #projects-page {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: flex-start;
   text-align: center;
   gap: 2vw;
   color: white;
-  justify-content: center;
-  padding: 8vw;
+  padding: 9vw;
   height: 100vh;
   width: 100vw;
+  font-family: "Roboto Slab";
 }
 
-a:hover {
-    text-decoration: underline;
+.projectCard {
+  display: flex;
+  align-items: center;
+  margin: 1.5vw 0 0 2vw;
+  padding-bottom: 15px;
+  gap: 5vw;
 }
 
-h3 {
-    line-height: 1;
+.projectImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32vw;
+  gap: 3em;
+}
+
+.projectImage {
+  width: 100%;
+  aspect-ratio: 3/2;
+  scale: 1.2;
+  border-radius: 10px;
+  border: 3px solid var(--green);
+}
+
+.projectLinks {
+  font-size: 1.2em;
+  display: flex;
+  gap: 60px;
+  border: none;
+  justify-content: space-between;
+}
+
+.projectLinks > a:hover {
+  color: var(--green);
+}
+
+.projectLinks > span {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 24px;
+  border: 0;
+  color: #000021;
+  background: var(--green);
+  line-height: 1.15;
+  font-size: 16px;
+}
+
+.projectLinks > span:hover {
+  transition: all 0.1s ease;
+  scale: 1.05;
+}
+
+.projectInfo {
+  height: 100%;
+  width: 50vw;
+  gap: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.Typewriter__wrapper {
+  color: var(--green);
+  font-size: 1.75em;
 }
